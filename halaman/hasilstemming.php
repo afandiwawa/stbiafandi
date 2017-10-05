@@ -1,4 +1,4 @@
-<div class="">
+<<div class="">
   <div class="clearfix"></div>
         <div class="panel-group" id="accordion">
         <div class="panel panel-default">
@@ -10,6 +10,7 @@
           <div id="collapse1" class="panel-collapse">
             <div class="panel-body">Proses untuk menemukan kata dasar dari sebuah kata. Dengan cara menghilangkan semua imbuhan (affixes) baik yang terdiri dari awalan (prefixes), sisipan (infixes), akhiran
 (suffixes) dan confixes (kombinasi dari awalan dan akhiran) pada kata turunan.
+<p>Metode TF(Term frequency) adalah merupakan suatu metode pembobotan.</p>
  </div>
           </div>
         </div>
@@ -19,7 +20,7 @@
     <div class="col-md-12 col-sm-12 col-xs-12">
       <div class="x_panel">
         <div class="x_title">
-          <h2>Hasil Stemming</h2>
+          <h2>Hasil Stemming </h2>
           <div class="clearfix"></div>
         </div>
         <?php
@@ -34,7 +35,7 @@ mysqli_query($koneksi,"TRUNCATE TABLE tb_stemming");
                 <th>No</th>
                 <th>Term</th>
                 <th>Doc-ID</th>
-                <th>TF</th>
+                <th>TF(Term frequency)</th>
               </tr>
             </thead>
             <tbody>

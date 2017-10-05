@@ -28,8 +28,8 @@
                 <th>No</th>
                 <th>Term</th>
                 <th>Doc-ID</th>
-                <th>TF</th>
-                <th>DF</th>
+                <th>TF(Term frequency)</th>
+                <th>DF(Document frequency)</th>
               </tr>
             </thead>
             <tbody>

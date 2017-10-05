@@ -4,11 +4,14 @@
         <div class="panel panel-default">
           <div class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"><h2 style="color: green">Weight</h2></a>
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"><h2 style="color: green">Weight(Proses pembobotan setiap term di dalam dokumen).</h2></a>
             </h4>
           </div>
           <div id="collapse1" class="panel-collapse">
-            <div class="panel-body">W = (TF * IDF)
+            <div class="panel-body">W = (TF * IDF) 
+			<P>TF melakukan pembobotan berdasarkan term yang sering muncul dalam dokumen.<P/> 
+			<P>IDF melakukan pembobotan berdasarkan jumlah kemunculannya dalam koleksi dokumen.<P/> 
+			<P>DF jumlah dokumen yang mengandung query<P/>.
  </div>
           </div>
         </div>
@@ -28,10 +31,10 @@
                 <th>No</th>
                 <th>Term</th>
                 <th>Doc-ID</th>
-                <th>TF</th>
-                <th>DF</th>
+                <th>TF(Term Frequency)</th>
+                <th>DF(Document frequency)</th>
                 <th>N</th>
-                <th>IDF</th>
+                <th>IDF(Inverse Document Frequency)</th>
                 <th>W=TF * IDF</th>
               </tr>
             </thead>
