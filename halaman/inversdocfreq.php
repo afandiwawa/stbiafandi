@@ -28,18 +28,18 @@
                 <th>No</th>
                 <th>Term</th>
                 <th>Doc-ID</th>
-                <th>TF(Term Frequency)</th>
-                <th>DF(Document frequency)</th>
+                <th>TF</th>
+                <th>DF</th>
                 <th>N</th>
-                <th>IDF(Inverse Document Frequency)</th>
+                <th>IDF</th>
               </tr>
             </thead>
             <tbody>
               <?php
                   $result = mysqli_query($koneksi,"select b.Id as Id,b.Term,b.DocId AS DocId,b.TF AS TF,a.DF AS DF, a.N as N, log10(a.N/a.DF) AS IDF from
-  (select Id,Term,Count(Distinct Id) AS DF ,(SELECT Count(Distinct DocId)FROM tb_stemming) AS N from tb_stemming Group By Term) a
+  (select Id,Term,Count(Distinct Id) AS DF ,(SELECT Count(Distinct DocId)FROM tb_proses) AS N from tb_proses Group By Term) a
 left join
-  (select Id,Term,DocId, Count AS TF  from tb_stemming Group By Id) b
+  (select Id,Term,DocId, Count AS TF  from tb_proses Group By Id) b
 on b.Term = a.Term");
 $warna = "#DFE3FF";
 $no=1;

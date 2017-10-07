@@ -13,23 +13,26 @@
 				</div>
 				<?php
 				include 'koneksi.php';
-				$result = mysqli_query($koneksi,"SELECT * FROM tb_dokumen");
-$no=1;				$warna = "#DFE3FF";
+				$result = mysqli_query($koneksi,"SELECT * FROM tb_dokumen ORDER BY Id");
 				?>
 				<div class="table-responsive">
 					<table id="datatable" class="table table-striped table-bordered table-hover">
 						<thead>
 							<tr>
-<th>No</th>								<th>Dokumen</th>
+								<th>No</th>
+								<th>Dokumen</th>
+								<th>Link</th>
 							</tr>
 						</thead>
 						<tbody>
 							<?php
+							$no=1;
 							while($row = mysqli_fetch_array($result)) {
-							if($warna=="#DFE3FF"){$warna="#DFF0D8";}else{$warna="#DFE3FF";}
-							print("<tr bgcolor='$warna'>");
-								print("<td>" . $no++ . "</td>". "<td><font color =blue>" . $row['Judul'] . "</font><br /><textarea class='form-control' cols='160%' >" . $row['Isi']."</textarea>
-									</td>");
+							print("<tr>");
+								print("<td>" . $no++ .  "</td>
+									<td><font color =blue>" . $row['Judul'] . "</font></td>
+									<td><font color =blue>" . $row['URL'] . "</font></td>
+									");
 							print("</tr>");
 							}
 							?>
