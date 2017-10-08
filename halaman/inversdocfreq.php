@@ -8,7 +8,8 @@
             </h4>
           </div>
           <div id="collapse1" class="panel-collapse">
-            <div class="panel-body">Invers Document Frequency
+            <div class="panel-body">Invers Document Frequency :melakukan pembobotan berdasarkan jumlah kemunculannya dalam koleksi dokumen.
+			
  </div>
           </div>
         </div>
@@ -28,10 +29,10 @@
                 <th>No</th>
                 <th>Term</th>
                 <th>Doc-ID</th>
-                <th>TF</th>
-                <th>DF</th>
+                <th>TF(Term Frequency)</th>
+                <th>DF(Document frequency)</th>
                 <th>N</th>
-                <th>IDF</th>
+                <th>IDF(Inverse Document Frequency)</th>
               </tr>
             </thead>
             <tbody>

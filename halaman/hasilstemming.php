@@ -10,6 +10,7 @@
           <div id="collapse1" class="panel-collapse">
             <div class="panel-body">Proses untuk menemukan kata dasar dari sebuah kata. Dengan cara menghilangkan semua imbuhan (affixes) baik yang terdiri dari awalan (prefixes), sisipan (infixes), akhiran
 (suffixes) dan confixes (kombinasi dari awalan dan akhiran) pada kata turunan.
+<p>Metode TF(Term frequency) adalah merupakan suatu metode pembobotan.</p>
  </div>
           </div>
         </div>
@@ -27,7 +28,6 @@
         $result = mysqli_query($koneksi,"SELECT * FROM tb_proses");
         $warna = "#DFE3FF";
         ?>
-        ?>
         <div class="table-responsive">
           <table id="datatable" class="table table-striped table-bordered table-hover">
             <thead>
@@ -36,7 +36,7 @@
                 <th>Term</th>
                 <th>TermStem</th>
                 <th>Doc-ID</th>
-                <th>TF</th>
+                <th>TF(Term Frequency)</th>
               </tr>
             </thead>
                   <tbody>

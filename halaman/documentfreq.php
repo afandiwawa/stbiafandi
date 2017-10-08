@@ -8,7 +8,7 @@
         </h4>
       </div>
       <div id="collapse1" class="panel-collapse">
-        <div class="panel-body">Document Frequency.
+        <div class="panel-body">Document Frequency.  (jumlah kali setiap istilah muncul dalam koleksi dokumen).
         </div>
       </div>
     </div>
@@ -28,8 +28,8 @@
                 <th>No</th>
                 <th>TermStem</th>
                 <th>Doc-ID</th>
-                <th>TF</th>
-                <th>DF</th>
+                <th>TF(Term frequency)</th>
+                <th>DF(Document frequency)</th>
               </tr>
             </thead>
             <tbody>
